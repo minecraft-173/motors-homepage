@@ -36,7 +36,7 @@ text-decoration:none;
 font-weight:bold;
 }
 
-/* メイン */
+/* ヒーロー */
 
 .hero{
 text-align:center;
@@ -78,6 +78,99 @@ border-radius:15px;
 box-shadow:0 5px 10px rgba(0,0,0,0.1);
 }
 
+/* メーカースライダー */
+
+.car-slider{
+padding:60px 0;
+background:#fff;
+text-align:center;
+overflow:hidden;
+}
+
+.slider{
+width:100%;
+overflow:hidden;
+}
+
+.slide-track{
+display:flex;
+width:200%;
+animation:scroll 25s linear infinite;
+align-items:center;
+}
+
+.slide-track img{
+height:80px;
+margin:0 40px;
+}
+
+/* 文字スライド */
+
+.text-slider{
+overflow:hidden;
+margin-top:10px;
+}
+
+.text-track{
+display:flex;
+width:200%;
+animation:scroll 25s linear infinite;
+}
+
+.text-track span{
+width:200px;
+text-align:center;
+font-weight:bold;
+color:#FF7A00;
+}
+
+/* アニメーション */
+
+@keyframes scroll{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+
+/* 会社案内 */
+
+.about{
+padding:60px 20px;
+text-align:center;
+background:#FFF;
+}
+
+.about-message{
+max-width:700px;
+margin:30px auto;
+line-height:1.8;
+}
+
+.company-table{
+max-width:600px;
+margin:30px auto;
+border-collapse:collapse;
+width:100%;
+}
+
+.company-table th,
+.company-table td{
+border-bottom:1px solid #ddd;
+padding:12px;
+text-align:left;
+}
+
+.company-table th{
+width:30%;
+background:#FFE0CC;
+}
+
 /* 店舗情報 */
 
 .info{
@@ -101,14 +194,13 @@ padding:20px;
 <body>
 
 <header>
+
 <h1>🚗 大石モータース</h1>
 
 <nav>
 <a href="#">ホーム</a>
-<a href="#">サービス</a>
-<a href="#">車検</a>
-<a href="#">中古車</a>
-<a href="#">会社案内</a>
+<a href="#services">サービス</a>
+<a href="#about">会社案内</a>
 <a href="#">お問い合わせ</a>
 </nav>
 
@@ -118,13 +210,13 @@ padding:20px;
 
 <h2>地域のカーライフをサポート！</h2>
 
-<p>車検・修理・中古車なら大石モータースへ</p>
+<p>車検・修理・中古車・新車販売なら大石モータースへ</p>
 
 <a class="button" href="#">お問い合わせ</a>
 
 </section>
 
-<section class="services">
+<section id="services" class="services">
 
 <h2>サービス</h2>
 
@@ -141,6 +233,11 @@ padding:20px;
 </div>
 
 <div class="card">
+<h3>🚙 新車販売</h3>
+<p>国内メーカーの新車も取り扱っています</p>
+</div>
+
+<div class="card">
 <h3>🛠 修理</h3>
 <p>小さな修理から対応します</p>
 </div>
@@ -154,11 +251,118 @@ padding:20px;
 
 </section>
 
+<section class="car-slider">
+
+<h2>取り扱いメーカー</h2>
+
+<div class="slider">
+
+<div class="slide-track">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_logo.png">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Honda-logo.png">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Nissan_logo.png">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Suzuki_logo_2.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Daihatsu_logo.svg">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Toyota_logo.png">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Honda-logo.png">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Nissan_logo.png">
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Suzuki_logo_2.svg">
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Daihatsu_logo.svg">
+
+</div>
+
+</div>
+
+<div class="text-slider">
+
+<div class="text-track">
+
+<span>TOYOTA</span>
+<span>HONDA</span>
+<span>NISSAN</span>
+<span>SUZUKI</span>
+<span>DAIHATSU</span>
+
+<span>TOYOTA</span>
+<span>HONDA</span>
+<span>NISSAN</span>
+<span>SUZUKI</span>
+<span>DAIHATSU</span>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about" class="about">
+
+<h2>会社案内</h2>
+
+<div class="about-message">
+
+<p>
+大石モータースは地域密着の自動車整備工場として、  
+車検・整備・修理・中古車販売・新車販売などを通じて  
+お客様のカーライフをサポートしています。
+</p>
+
+<p>
+「安心して車に乗れる毎日」をお届けするため、  
+丁寧な整備とわかりやすい説明を大切にしています。  
+お車のことでお困りの際は、ぜひお気軽にご相談ください。
+</p>
+
+</div>
+
+<table class="company-table">
+
+<tr>
+<th>会社名</th>
+<td>大石モータース</td>
+</tr>
+
+<tr>
+<th>代表者</th>
+<td>大石 〇〇</td>
+</tr>
+
+<tr>
+<th>所在地</th>
+<td>〇〇県〇〇市</td>
+</tr>
+
+<tr>
+<th>電話番号</th>
+<td>000-0000-0000</td>
+</tr>
+
+<tr>
+<th>営業時間</th>
+<td>9:00〜18:00</td>
+</tr>
+
+<tr>
+<th>定休日</th>
+<td>火曜日</td>
+</tr>
+
+<tr>
+<th>事業内容</th>
+<td>車検・整備・修理・中古車販売・新車販売</td>
+</tr>
+
+</table>
+
+</section>
+
 <section class="info">
 
 <h2>店舗情報</h2>
 
-<p>📍 住所:静岡県榛原郡吉田町住吉1240-1</p>
+<p>📍 住所：静岡県榛原郡住吉1240-1</p>
 <p>📞 電話：000-0000-0000</p>
 <p>⏰ 営業時間：9:00〜18:00</p>
 
@@ -169,6 +373,3 @@ padding:20px;
 <p>© 2026 大石モータース</p>
 
 </footer>
-
-</body>
-</html>

@@ -8,368 +8,281 @@
 <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
-
 body{
-margin:0;
-font-family:'M PLUS Rounded 1c', sans-serif;
-background:#FFF4E6;
-color:#4A2E1F;
+  margin:0;
+  font-family:'M PLUS Rounded 1c', sans-serif;
+  background:#FFF4E6;
+  color:#4A2E1F;
 }
 
 /* ヘッダー */
-
 header{
-background:#FF7A00;
-color:white;
-padding:20px;
-text-align:center;
+  background:#FF7A00;
+  color:white;
+  padding:20px;
+  text-align:center;
 }
-
 nav{
-margin-top:10px;
+  margin-top:10px;
 }
-
 nav a{
-color:white;
-margin:0 10px;
-text-decoration:none;
-font-weight:bold;
+  color:white;
+  margin:0 10px;
+  text-decoration:none;
+  font-weight:bold;
 }
 
 /* ヒーロー */
-
 .hero{
-text-align:center;
-padding:80px 20px;
-background:linear-gradient(135deg,#FF9A76,#FFD84D);
-color:white;
+  text-align:center;
+  padding:80px 20px;
+  background:linear-gradient(135deg,#FF9A76,#FFD84D);
+  color:white;
 }
-
 .button{
-display:inline-block;
-margin-top:20px;
-padding:12px 30px;
-background:white;
-color:#FF7A00;
-border-radius:30px;
-font-weight:bold;
-text-decoration:none;
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 30px;
+  background:white;
+  color:#FF7A00;
+  border-radius:30px;
+  font-weight:bold;
+  text-decoration:none;
 }
 
 /* サービス */
-
 .services{
-padding:60px 20px;
-text-align:center;
+  padding:60px 20px;
+  text-align:center;
 }
-
 .service-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
-max-width:900px;
-margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+  max-width:900px;
+  margin:auto;
 }
-
 .card{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 10px rgba(0,0,0,0.1);
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 5px 10px rgba(0,0,0,0.1);
 }
 
 /* メーカースライダー */
-
 .car-slider{
-padding:60px 0;
-background:#fff;
-text-align:center;
-overflow:hidden;
+  padding:60px 0;
+  background:#fff;
+  text-align:center;
+  overflow:hidden;
 }
-
 .slider{
-width:100%;
-overflow:hidden;
+  width:100%;
+  overflow:hidden;
 }
-
 .slide-track{
-display:flex;
-width:200%;
-animation:scroll 25s linear infinite;
-align-items:center;
+  display:flex;
+  width:200%;
+  animation:scroll 25s linear infinite;
+  align-items:flex-start;
 }
-
-.slide-track img{
-height:80px;
-margin:0 40px;
+.slide-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  margin:0 20px;
 }
-
-/* 文字スライド */
-
-.text-slider{
-overflow:hidden;
-margin-top:10px;
+.slide-item img{
+  height:150px;
+  object-fit:contain;
+  border-radius:10px;
 }
-
-.text-track{
-display:flex;
-width:200%;
-animation:scroll 25s linear infinite;
+.slide-item span{
+  margin-top:5px;
+  font-weight:bold;
+  color:#FF7A00;
+  text-align:center;
 }
-
-.text-track span{
-width:200px;
-text-align:center;
-font-weight:bold;
-color:#FF7A00;
-}
-
 /* アニメーション */
-
 @keyframes scroll{
-
-0%{
-transform:translateX(0);
-}
-
-100%{
-transform:translateX(-50%);
-}
-
+  0%{transform:translateX(0);}
+  100%{transform:translateX(-50%);}
 }
 
 /* 会社案内 */
-
 .about{
-padding:60px 20px;
-text-align:center;
-background:#FFF;
+  padding:60px 20px;
+  text-align:center;
+  background:#FFF;
 }
-
 .about-message{
-max-width:700px;
-margin:30px auto;
-line-height:1.8;
+  max-width:700px;
+  margin:30px auto;
+  line-height:1.8;
 }
-
 .company-table{
-max-width:600px;
-margin:30px auto;
-border-collapse:collapse;
-width:100%;
+  max-width:600px;
+  margin:30px auto;
+  border-collapse:collapse;
+  width:100%;
 }
-
 .company-table th,
 .company-table td{
-border-bottom:1px solid #ddd;
-padding:12px;
-text-align:left;
+  border-bottom:1px solid #ddd;
+  padding:12px;
+  text-align:left;
 }
-
 .company-table th{
-width:30%;
-background:#FFE0CC;
+  width:30%;
+  background:#FFE0CC;
 }
 
 /* 店舗情報 */
-
 .info{
-background:#FFE0CC;
-padding:40px;
-text-align:center;
+  background:#FFE0CC;
+  padding:40px;
+  text-align:center;
 }
 
 /* フッター */
-
 footer{
-background:#FF7A00;
-color:white;
-text-align:center;
-padding:20px;
+  background:#FF7A00;
+  color:white;
+  text-align:center;
+  padding:20px;
 }
-
 </style>
 </head>
-
 <body>
 
 <header>
-
 <h1>🚗 大石モータース</h1>
-
 <nav>
 <a href="#">ホーム</a>
 <a href="#services">サービス</a>
 <a href="#about">会社案内</a>
 <a href="#">お問い合わせ</a>
 </nav>
-
 </header>
 
 <section class="hero">
-
 <h2>地域のカーライフをサポート！</h2>
-
 <p>車検・修理・中古車・新車販売なら大石モータースへ</p>
-
 <a class="button" href="#">お問い合わせ</a>
-
 </section>
 
 <section id="services" class="services">
-
 <h2>サービス</h2>
-
 <div class="service-grid">
-
-<div class="card">
-<h3>🔧 車検</h3>
-<p>安心・丁寧な車検サービス</p>
+  <div class="card">
+    <h3>🔧 車検</h3>
+    <p>安心・丁寧な車検サービス</p>
+  </div>
+  <div class="card">
+    <h3>🚗 中古車販売</h3>
+    <p>良質な中古車を取り揃えています</p>
+  </div>
+  <div class="card">
+    <h3>🚙 新車販売</h3>
+    <p>国内メーカーの新車も取り扱っています</p>
+  </div>
+  <div class="card">
+    <h3>🛠 修理</h3>
+    <p>小さな修理から対応します</p>
+  </div>
+  <div class="card">
+    <h3>🛞 タイヤ交換</h3>
+    <p>季節のタイヤ交換もお任せ</p>
+  </div>
 </div>
-
-<div class="card">
-<h3>🚗 中古車販売</h3>
-<p>良質な中古車を取り揃えています</p>
-</div>
-
-<div class="card">
-<h3>🚙 新車販売</h3>
-<p>国内メーカーの新車も取り扱っています</p>
-</div>
-
-<div class="card">
-<h3>🛠 修理</h3>
-<p>小さな修理から対応します</p>
-</div>
-
-<div class="card">
-<h3>🛞 タイヤ交換</h3>
-<p>季節のタイヤ交換もお任せ</p>
-</div>
-
-</div>
-
 </section>
 
+<!-- ここにスライダーを追加 -->
 <section class="car-slider">
-
 <h2>取り扱いメーカー</h2>
-
 <div class="slider">
-
-<div class="slide-track">
-
-<img src="https://global.toyota/pages/news/images/2023/06/21/1330/002.jpg">
-<img src="https://www.honda.co.jp/VEZEL/common/images/type/ehev_z/c_platina_white.jpg">
-<img src="https://www.nissan.co.jp/CARLINEUP/CARIMAGES_TYPE_B/THUMB/simpleView_car_SAKURA-pers.jpg">
-<img src="https://www.suzuki.co.jp/car/hustler/home/img/price_image1.jpg">
-<img src="https://www.daihatsu.com/jp/news/2017/qk2nl20000002x3w-img/20170911_002.png">
-
-<img src="https://global.toyota/pages/news/images/2023/06/21/1330/002.jpg">
-<img src="https://www.honda.co.jp/VEZEL/common/images/type/ehev_z/c_platina_white.jpg">
-<img src="https://www.nissan.co.jp/CARLINEUP/CARIMAGES_TYPE_B/THUMB/simpleView_car_SAKURA-pers.jpg">
-<img src="https://www.suzuki.co.jp/car/hustler/home/img/price_image1.jpg">
-<imf scr="https://www.daihatsu.com/jp/news/2017/qk2nl20000002x3w-img/20170911_002.png">
-
+  <div class="slide-track">
+    <div class="slide-item">
+      <img src="https://global.toyota/pages/news/images/2023/06/21/1330/002.jpg" alt="TOYOTA">
+      <span>TOYOTA</span>
+    </div>
+    <div class="slide-item">
+      <img src="https://www.honda.co.jp/VEZEL/common/images/type/ehev_z/c_platina_white.jpg" alt="HONDA">
+      <span>HONDA</span>
+    </div>
+    <div class="slide-item">
+      <img src="https://www.nissan.co.jp/CARLINEUP/CARIMAGES_TYPE_B/THUMB/simpleView_car_SAKURA-pers.jpg" alt="NISSAN">
+      <span>NISSAN</span>
+    </div>
+    <div class="slide-item">
+      <img src="https://www.suzuki.co.jp/car/hustler/home/img/price_image1.jpg" alt="SUZUKI">
+      <span>SUZUKI</span>
+    </div>
+    <div class="slide-item">
+      <img src="https://www.daihatsu.com/jp/news/2017/qk2nl20000002x3w-img/20170911_002.png" alt="DAIHATSU">
+      <span>DAIHATSU</span>
+    </div>
+    <!-- 繰り返し -->
+    <div class="slide-item">
+      <img src="https://global.toyota/pages/news/images/2023/06/21/1330/002.jpg" alt="TOYOTA">
+      <span>TOYOTA</span>
+    </div>
+    <div class="slide-item">
+      <img src="https://www.honda.co.jp/VEZEL/common/images/type/ehev_z/c_platina_white.jpg" alt="HONDA">
+      <span>HONDA</span>
+    </div>
+    <div class="slide-item">
+      <img src="https://www.nissan.co.jp/CARLINEUP/CARIMAGES_TYPE_B/THUMB/simpleView_car_SAKURA-pers.jpg" alt="NISSAN">
+      <span>NISSAN</span>
+    </div>
+    <div class="slide-item">
+      <img src="https://www.suzuki.co.jp/car/hustler/home/img/price_image1.jpg" alt="SUZUKI">
+      <span>SUZUKI</span>
+    </div>
+    <div class="slide-item">
+      <img src="https://www.daihatsu.com/jp/news/2017/qk2nl20000002x3w-img/20170911_002.png" alt="DAIHATSU">
+      <span>DAIHATSU</span>
+    </div>
+  </div>
 </div>
-
-</div>
-
-<div class="text-slider">
-
-<div class="text-track">
-
-<span>TOYOTA</span>
-<span>HONDA</span>
-<span>NISSAN</span>
-<span>SUZUKI</span>
-<span>DAIHATSU</span>
-
-<span>TOYOTA</span>
-<span>HONDA</span>
-<span>NISSAN</span>
-<span>SUZUKI</span>
-<span>DAIHATSU</span>
-
-</div>
-
-</div>
-
 </section>
 
 <section id="about" class="about">
-
 <h2>会社案内</h2>
-
 <div class="about-message">
-
 <p>
 大石モータースは地域密着の自動車整備工場として、  
 車検・整備・修理・中古車販売・新車販売などを通じて  
 お客様のカーライフをサポートしています。
 </p>
-
 <p>
 「安心して車に乗れる毎日」をお届けするため、  
 丁寧な整備とわかりやすい説明を大切にしています。  
 お車のことでお困りの際は、ぜひお気軽にご相談ください。
 </p>
-
 </div>
 
 <table class="company-table">
-
-<tr>
-<th>会社名</th>
-<td>大石モータース</td>
-</tr>
-
-<tr>
-<th>代表者</th>
-<td>大石 〇〇</td>
-</tr>
-
-<tr>
-<th>所在地</th>
-<td>〇〇県〇〇市</td>
-</tr>
-
-<tr>
-<th>電話番号</th>
-<td>000-0000-0000</td>
-</tr>
-
-<tr>
-<th>営業時間</th>
-<td>9:00〜18:00</td>
-</tr>
-
-<tr>
-<th>定休日</th>
-<td>火曜日</td>
-</tr>
-
-<tr>
-<th>事業内容</th>
-<td>車検・整備・修理・中古車販売・新車販売</td>
-</tr>
-
+<tr><th>会社名</th><td>大石モータース</td></tr>
+<tr><th>代表者</th><td>大石 〇〇</td></tr>
+<tr><th>所在地</th><td>〇〇県〇〇市</td></tr>
+<tr><th>電話番号</th><td>000-0000-0000</td></tr>
+<tr><th>営業時間</th><td>9:00〜18:00</td></tr>
+<tr><th>定休日</th><td>日曜日</td></tr>
+<tr><th>事業内容</th><td>車検・整備・修理・中古車販売・新車販売</td></tr>
 </table>
-
 </section>
 
 <section class="info">
-
 <h2>店舗情報</h2>
-
-<p>📍 住所：静岡県榛原郡住吉1240-1</p>
+<p>📍 住所：〇〇県〇〇市</p>
 <p>📞 電話：000-0000-0000</p>
 <p>⏰ 営業時間：9:00〜18:00</p>
-
 </section>
 
 <footer>
-
 <p>© 2026 大石モータース</p>
-
 </footer>
+
+</body>
+</html>
